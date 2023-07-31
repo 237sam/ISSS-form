@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form action="index.html" method="post">
+        <h1>Banco de sangre ISS</h1>
+        <div class="inputbox">
+            <h2>selección de fecha</h2>
+            <label for="Fecha">seleccione la fecha en que desea donar sangre</label>
+            <input type="date" name="fecha_donacion" id="fecha" required>
+        </div>
+        <div class="inputbox">
+            <h2>Agregue detalles</h2>
+            <label for="Nombre">Nombres</label>
+            <input type="text" required>
+        </div>
+        <div class="inputbox">
+            <label for="Apellido">Apellidos</label>
+            <input type="text" name="apellido_donante" id="apellido" required>
+        </div>
+        <div class="inputbox">
+            <h2>Agregue detalles adicionales</h2>
+            <label for="numDUI">Numero de DUI del donante</label>
+            <input type="text" name="num_donante" id="DUI" required>
+        </div>
+        <div class="inputbox">
+            <label for="Genero">Sexo del donante</label>
+            <select name="genero_donante" id="genero">
+                <option value selected>--seleccione un genro--</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+        </div>
+        <div class="inputbox">
+            <label for="Ocupacion">Ocupación del donante</label>
+            <input type="text" name="ocupacion_donante" id="ocupacion">
+        </div>
+        <div class="inputbox">
+            <label for="Telefono">telefono de contacto del donante</label>
+            <input type="text" name="telefono_donante" id="telefono">
+        </div>
+        <div class="inputbox">
+            <label for="NombreCom">Nombre competo del donante</label>
+            <input type="text" name="nombrecom_donante" id="nombrecom">
+        </div>
+        <div class="inputbox">
+            <input type="submit" name="envioDatos" id="boton" value="Reservar">
+        </div>
+    </form>
+</body>
+</html>
